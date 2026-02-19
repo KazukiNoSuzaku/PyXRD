@@ -13,6 +13,9 @@ All source lives under `data/lib/python3.8/site-packages/pyxrd/` (bundled instal
 - **Pyro4 server is disabled.** `pyxrd/data/settings.py` uses only `DummyAsyncServerProvider`.
   Do not re-add `Pyro4AsyncServerProvider` unless explicitly asked.
 
+## Commit Message Format
+Always use `HHMMddmmyyyy` using the current system time (e.g. `011920022026` = 01:19 on Feb 20 2026).
+
 ## Watch Out For
 - A linter may silently revert file edits. Always run `git diff` to confirm a change stuck before committing.
 - The `data/lib/.../` path contains both `.py` source files and `.pyc` compiled files — edit only the `.py` files.
