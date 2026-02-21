@@ -34,6 +34,12 @@ data/lib/python3.8/site-packages/pytz-*.dist-info/
 dist/
 build/
 
+# Bundled Python runtime – packages installed by setup.bat (version-specific)
+runtime/Lib/
+
+# Old GTK Python 3.8 runtime (replaced by runtime/)
+data/bin/
+
 # Python bytecode
 __pycache__/
 *.pyc

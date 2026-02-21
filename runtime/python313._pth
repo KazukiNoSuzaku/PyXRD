@@ -1,0 +1,7 @@
+python313.zip
+.
+../data/lib/python3.8/site-packages
+Lib/site-packages
+
+# Enable site.main() so pip-installed packages work
+import site
