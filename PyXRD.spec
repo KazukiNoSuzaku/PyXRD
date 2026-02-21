@@ -27,6 +27,8 @@ datas += numpy_datas + scipy_datas
 hidden = (
     collect_submodules('pyxrd') +
     collect_submodules('mvc') +
+    collect_submodules('numpy') +
+    collect_submodules('numpy._core') +
     numpy_hidden +
     scipy_hidden +
     [
@@ -64,7 +66,7 @@ exe = EXE(
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
-    upx=True,
+    upx=False,
     console=False,
     disable_windowed_traceback=False,
     argv_emulation=False,
@@ -79,7 +81,7 @@ coll = COLLECT(
     a.binaries,
     a.datas,
     strip=False,
-    upx=True,
+    upx=False,
     upx_exclude=[],
     name='PyXRD',
 )
