@@ -1,0 +1,11 @@
+# PySide6 / Qt binaries – too large for git (~628 MB).
+# Install via: pip install -r requirements.txt
+data/lib/python3.8/site-packages/PySide6/
+data/lib/python3.8/site-packages/PySide6_Addons*/
+data/lib/python3.8/site-packages/PySide6_Essentials*/
+data/lib/python3.8/site-packages/shiboken6/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
